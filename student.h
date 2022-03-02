@@ -32,6 +32,4 @@ public:
 	bool isDeleted() const { return deleted; }
 	int operator()() const { return index; }
 	friend class HashTable;
-	friend class Bucket;
-
 };

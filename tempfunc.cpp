@@ -37,23 +37,3 @@ void printMenu() {
         "10. Izlaz\n";
 
 }
-
-int* highBits(int num, int n, int limit) {
-    int* bits = new int[n];
-    int len = 0;
-    int numsBits = sizeof(int)* 8;
-    if (limit) numsBits = limit;
-    int temp = pow(2, numsBits - 1);
-    for (int i = 0; i < n; i++) {
-        bits[i] = (num & temp) ? 1 : 0;
-        temp >>= 1;
-    }
-    return bits;
-}
-
-bool compareBits(int* a, int* b, int len) {
-    for (int i = 0; i < len; i++) {
-        if (a[i] != b[i]) return false;
-    }
-    return true;
-}
