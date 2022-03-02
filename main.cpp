@@ -6,12 +6,12 @@ int main() {
 	int p = 5, k = 1, d = 2;
 	char c;
 	bool check;
-	/*cout << "Unesite parametar p: ";
+	cout << "Unesite parametar p: ";
 	cin >> p;
 	cout << "Unesite parametar k: ";
 	cin >> k;
 	cout << "Unesite parametar d: ";
-	cin >> d;*/
+	cin >> d;
 	//c = getchar();
 	HashTable hashmap(d, p, k);
 	Student student;
@@ -23,8 +23,27 @@ int main() {
 		if (check) cout << "Uspesno dodat student!\n";
 		else cout << "Neuspesno dodat student!\n";
 	}
-
-	cout << "Haloo";
+	int n;
+	while (true) {
+		
+		printMenu();
+		int n;
+		cin << n;
+		switch(n) {
+			case 0:
+			case 1:
+			case 2:
+			case 3:
+			case 4:
+			case 5:
+			case 6:
+			case 7:
+			case 8:
+			case 9:
+			case 10: return 0;
+		}
+	}
+	
 }
 
 /*
